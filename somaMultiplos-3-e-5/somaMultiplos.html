@@ -1,0 +1,25 @@
+<html>
+  <script>
+  //criar um programa para informar a soma de todos os múltiplos de 3 ou 5 menores 
+  //que determinado número.
+somar(10); //coloque aqui o valor
+
+function somar(limite) {
+    let multiplosDe3 = 0;
+    let multiplosDe5 = 0;
+    let multiplosDeAmbos = 0;
+
+    for (i = 0; i < limite; i++) {
+        if (i % 3 === 0)
+            multiplosDe3 += i;
+        if (i % 5 === 0)
+            multiplosDe5 += i;
+        if (i % 15 === 0)
+            multiplosDeAmbos += i;
+    }
+
+    //multiplosDeAmbos se repetirá 2 vezes em cada multiplo por isso devo diminuir 1 vez
+    console.log(multiplosDe3 + multiplosDe5 - multiplosDeAmbos);
+}
+ </script>
+</html
